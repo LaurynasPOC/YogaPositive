@@ -22,10 +22,10 @@ const QuestionPart: React.FC<Props> = ({ headline, text }) => {
       className="question-part-container"
       onClick={() => setSelected(!selected)}
     >
-      <TextBase display="flex" justifyContent="space-between">
+      <Box display="flex" justifyContent="space-between">
         <H5>{headline}</H5>
         {selected ? <img src={Up} alt="" /> : <img src={Down} alt="" />}
-      </TextBase>
+      </Box>
       {selected && <TextBase>{text}</TextBase>}
     </Box>
   );

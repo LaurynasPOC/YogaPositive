@@ -10,6 +10,7 @@ interface SpanBaseStyles {
   textDecoration?: string;
   textTransform?: string;
   letterSpacing?: string;
+  lineHeight?: string;
 }
 
 export const SpanBase = styled.span<SpanBaseStyles>`
@@ -17,8 +18,9 @@ export const SpanBase = styled.span<SpanBaseStyles>`
   font-size: ${({ fontSize }) => fontSize || ""};
   font-weight: ${({ fontWeight }) => fontWeight || 400};
   color: ${({ color }) => color || theme.colors.grey};
-  text-align: ${({ textAlign }) => textAlign || ""};
+  text-align: ${({ textAlign }) => textAlign || "left"};
   text-decoration: ${({ textDecoration }) => textDecoration || ""};
   text-transform: ${({ textTransform }) => textTransform || ""};
   letter-spacing: ${({ letterSpacing }) => letterSpacing || ""};
+  line-height: ${({ lineHeight }) => lineHeight || ""};
 `;

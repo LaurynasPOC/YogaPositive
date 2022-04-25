@@ -34,10 +34,10 @@ const MonthPlanPart: React.FC<Props> = ({
       onClick={() => setSelected(!selected)}
     >
       <TextBase fontWeight={700} display="flex">
-        {month} month plan{" "}
+        {month} month plan
         <SpanBase>
           {discount && (
-            <div>
+            <SpanBase>
               {selected ? (
                 <Button
                   height="18px"
@@ -52,11 +52,11 @@ const MonthPlanPart: React.FC<Props> = ({
               ) : (
                 ""
               )}
-            </div>
+            </SpanBase>
           )}
         </SpanBase>
       </TextBase>
-      <TextBase display="flex" justifyContent="space-between">
+      <Box margin="0 1rem" display="flex" justifyContent="space-between">
         <TextBase margin="0">
           <SpanBase fontSize="1.5rem" fontWeight={700}>
             ${price}
@@ -68,23 +68,28 @@ const MonthPlanPart: React.FC<Props> = ({
         ) : (
           <img src={TickBox} alt="buy it for sure" />
         )}
-      </TextBase>
+      </Box>
       <div>
         {preDiscount && (
-          <TextBase display="flex">
-            <SpanBase
+          <Box display="flex">
+            <TextBase
+              margin="1rem 0.5rem 1rem 1rem"
               color="black"
-              margin="0 6px 0 0"
               textDecoration="line-through"
             >
-              ${preDiscount}{" "}
-            </SpanBase>
-            <SpanBase fontWeight={700} margin="0 6px 0 0" color="orange">
-              {" "}
-              ${afterDiscount}{" "}
-            </SpanBase>
-            <p>billed every {month}</p>
-          </TextBase>
+              ${preDiscount}
+            </TextBase>
+            <TextBase
+              margin="1rem 0.5rem 1rem 0"
+              fontWeight={700}
+              color="orange"
+            >
+              ${afterDiscount}
+            </TextBase>
+            <TextBase margin="1rem 0.5rem 1rem 0">
+              billed every {month}
+            </TextBase>
+          </Box>
         )}
         {!preDiscount && <TextBase>Billed monthly</TextBase>}
       </div>

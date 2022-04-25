@@ -15,9 +15,10 @@ interface BoxStyles {
   boxShadow?: string;
   width?: string;
   position?: string;
+  fontWeight?: number;
 }
 
-export const Box = styled.p<BoxStyles>`
+export const Box = styled.div<BoxStyles>`
   display: ${({ display }) => display || ""};
   margin: ${({ margin }) => margin || ""};
   text-align: ${({ textAlign }) => textAlign || ""};
@@ -31,4 +32,5 @@ export const Box = styled.p<BoxStyles>`
   box-shadow: ${({ boxShadow }) => boxShadow || ""};
   width: ${({ width }) => width || ""};
   position: ${({ position }) => position || ""};
+  font-weight: ${({ fontWeight }) => fontWeight || 400};
 `;

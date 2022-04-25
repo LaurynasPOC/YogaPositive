@@ -2,6 +2,7 @@ import React from "react";
 import Star from "../../assets/images/Star.svg";
 import { Box } from "../wrappers/Box";
 import { TextBase } from "../texts/TextBase";
+import { SpanBase } from "../texts/SpanBase";
 import { H5 } from "../texts/H5";
 
 interface Props {
@@ -22,14 +23,14 @@ const Card: React.FC<Props> = ({ name, adress, picture, review }) => {
       height="607px"
       textAlign="left"
     >
-      <TextBase>
+      <Box>
         <H5 fontWeight={700} margin="0">
           {name}
         </H5>
         <TextBase color="grey" margin="0">
           {adress}
         </TextBase>
-      </TextBase>
+      </Box>
       <TextBase className="stars">
         <img src={Star} alt="star" />
         <img src={Star} alt="star" />
@@ -37,12 +38,15 @@ const Card: React.FC<Props> = ({ name, adress, picture, review }) => {
         <img src={Star} alt="star" />
         <img src={Star} alt="star" />
       </TextBase>
-      <TextBase>
+      <Box>
         <img src={picture} alt="I love Yoga" />
         <TextBase lineHeight="1.5rem" margin="1rem 0 0 0">
           {review}
         </TextBase>
-      </TextBase>
+        {/* <SpanBase lineHeight="1.5rem" margin="1rem 0 0 0">
+          {review}
+        </SpanBase> */}
+      </Box>
     </Box>
   );
 };
