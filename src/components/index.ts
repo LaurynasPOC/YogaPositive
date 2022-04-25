@@ -25,3 +25,5 @@ export * from "./questionsSection/QuestionsPart";
 export * from "./questionsSection/QuestionsSection";
 export * from "./yogaProgramSection/YogaProgramPart";
 export * from "./yogaProgramSection/YogaProgramSection";
+
+// Kodėl reikia exportinti taip failus?
