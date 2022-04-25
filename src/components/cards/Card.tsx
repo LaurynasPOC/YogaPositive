@@ -2,7 +2,6 @@ import React from "react";
 import Star from "../../assets/images/Star.svg";
 import { Box } from "../wrappers/Box";
 import { TextBase } from "../texts/TextBase";
-import { SpanBase } from "../texts/SpanBase";
 import { H5 } from "../texts/H5";
 
 interface Props {

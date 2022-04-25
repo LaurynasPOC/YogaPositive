@@ -1,10 +1,9 @@
 import * as React from "react";
 import Header from "../components/headerSection/Header";
 import "../styles/global.css";
-import { SectionWrapper } from "../components/wrappers/SectionWapper";
 import { importantData } from "../data";
-import { SpanBase } from "../components/texts/SpanBase";
-import { TextBase } from "../components/texts/TextBase";
+import { SpanBase, TextBase, Box, SectionWrapper } from "../components";
+
 import MonthPlansSection from "../components/monthPlans/MonthPlansSection";
 import HeadlineH1 from "../components/headline/HeadlineH1";
 import HeadllineH3 from "../components/headline/HeadllineH3";
@@ -12,7 +11,7 @@ import Btn from "../components/button/Btn";
 import PaymentSection from "../components/paymentSection/PaymentSection";
 import YogaProgramSection from "../components/yogaProgramSection/YogaProgramSection";
 import CardMobile from "../components/cards/CardsMobile";
-import { Box } from "../components/wrappers/Box";
+
 import IsYoga4USection from "../components/isYogaForYou/IsYoga4USection";
 import PhoneSection from "../components/phonesSection/phoneSection";
 import QuestionsSection from "../components/questionsSection/QuestionsSection";
