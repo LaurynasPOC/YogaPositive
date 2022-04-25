@@ -43,9 +43,6 @@ const Card: React.FC<Props> = ({ name, adress, picture, review }) => {
         <TextBase lineHeight="1.5rem" margin="1rem 0 0 0">
           {review}
         </TextBase>
-        {/* <SpanBase lineHeight="1.5rem" margin="1rem 0 0 0">
-          {review}
-        </SpanBase> */}
       </Box>
     </Box>
   );

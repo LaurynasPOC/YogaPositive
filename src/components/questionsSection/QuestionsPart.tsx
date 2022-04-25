@@ -22,7 +22,7 @@ const QuestionPart: React.FC<Props> = ({ headline, text }) => {
       className="question-part-container"
       onClick={() => setSelected(!selected)}
     >
-      <Box display="flex" justifyContent="space-between">
+      <Box margin="1rem" display="flex" justifyContent="space-between">
         <H5>{headline}</H5>
         {selected ? <img src={Up} alt="" /> : <img src={Down} alt="" />}
       </Box>
