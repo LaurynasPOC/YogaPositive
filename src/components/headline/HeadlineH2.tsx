@@ -5,8 +5,7 @@ interface Props {
   text?: string;
 }
 
-const HeadlineH2: React.FC<Props> = ({ text }) => {
-  return <H2 margin="0.5rem 0 0.5rem 0">{text}</H2>;
-};
-
+const HeadlineH2: React.FC<Props> = ({ text }) => (
+  <H2 margin="2rem 0">{text}</H2>
+);
 export default HeadlineH2;

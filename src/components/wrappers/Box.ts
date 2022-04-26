@@ -1,4 +1,28 @@
 import styled from "styled-components/macro";
+import {
+  alignSelf,
+  AlignSelfProps,
+  border,
+  BorderProps,
+  BoxShadowProps,
+  color,
+  ColorProps,
+  compose,
+  display,
+  DisplayProps,
+  layout,
+  LayoutProps,
+  position,
+  PositionProps,
+  shadow,
+  ShadowProps,
+  space,
+  SpaceProps,
+  textAlign,
+  TextAlignProps,
+  zIndex,
+  ZIndexProps,
+} from "styled-system";
 import { Colors, theme } from "../../styles/theme";
 
 interface BoxStyles {
@@ -16,6 +40,7 @@ interface BoxStyles {
   width?: string;
   position?: string;
   fontWeight?: number;
+  padding?: string;
 }
 
 export const Box = styled.div<BoxStyles>`
@@ -33,4 +58,5 @@ export const Box = styled.div<BoxStyles>`
   width: ${({ width }) => width || ""};
   position: ${({ position }) => position || ""};
   font-weight: ${({ fontWeight }) => fontWeight || 400};
+  padding: ${({ padding }) => padding || ""};
 `;

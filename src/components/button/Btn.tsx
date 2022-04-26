@@ -5,8 +5,5 @@ interface Props {
   text?: string;
 }
 
-const Btn: React.FC<Props> = ({ text }) => {
-  return <Button>{text}</Button>;
-};
-
+const Btn: React.FC<Props> = ({ text }) => <Button>{text}</Button>;
 export default Btn;

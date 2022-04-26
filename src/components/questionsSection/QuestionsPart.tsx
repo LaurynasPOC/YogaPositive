@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import Up from "../../assets/images/ExpandLess.svg";
 import Down from "../../assets/images/ExpandMore.svg";
 import { TextBase } from "../texts/TextBase";
@@ -12,7 +11,6 @@ interface Props {
 }
 
 const QuestionPart: React.FC<Props> = ({ headline, text }) => {
-  //questions part logic
   const [selected, setSelected] = useState(false);
   return (
     <Box

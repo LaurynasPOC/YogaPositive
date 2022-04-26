@@ -21,13 +21,13 @@ const IndexPage: React.FC = () => {
   console.log(importantData);
   return (
     <div>
-      <Header />
+      <Header discount={50} />
       <SectionWrapper>
         <TextBase margin="0" color="grey" display="flex">
-          Over{" "}
+          Over
           <SpanBase fontWeight={800} margin="0 6px 0 6px">
             {importantData.plans}
-          </SpanBase>{" "}
+          </SpanBase>
           plans ordered.
         </TextBase>
         <HeadlineH1 text="Get access to your yoga program now!" />
@@ -35,50 +35,30 @@ const IndexPage: React.FC = () => {
           textBlack="Choose your plan and get"
           textOrange="7 days free trial"
         />
-        <Box margin="1rem 0 0 0">
-          <MonthPlansSection />
-        </Box>
-
+        <MonthPlansSection />
         <Btn text="Get your plan" />
         <PaymentSection />
         <HeadllineH3 textBlack="What's my program?" />
         <YogaProgramSection />
         <HeadllineH3 textBlack="Hear success stories from our clients" />
         <CardMobile />
-        <Box margin="3rem 0 3rem 0">
-          <Btn text="Get my plan" />
-        </Box>
-        <Box margin="0 0 1rem 0">
-          <HeadllineH3 textBlack="Is Positive Yoga right for me?" />
-        </Box>
-        <IsYoga4USection />
-        <Box>
-          <HeadllineH3 textBlack="Start your Yoga journey now!" />
-        </Box>
-        <PhoneSection />
-        <Box margin="0 0 2rem 0">
-          <HeadllineH3 textBlack="Frequently Asked Questions" />
-        </Box>
-        <Box margin="0 0 3rem 0">
-          <QuestionsSection />
-        </Box>
         <Btn text="Get my plan" />
-        <Box margin="2rem 0">
-          <HeadlineH2 text="Start your yoga program today!" />
-        </Box>
+        <HeadllineH3 textBlack="Is Positive Yoga right for me?" />
+        <IsYoga4USection />
+        <HeadllineH3 textBlack="Start your Yoga journey now!" />
+        <PhoneSection />
+        <HeadllineH3 textBlack="Frequently Asked Questions" />
+        <QuestionsSection />
+        <Btn text="Get my plan" />
+        <HeadlineH2 text="Start your yoga program today!" />
         <HeadllineH3
           textBlack="Choose your plan and get"
           textOrange="7 days free trial"
         />
-        <Box margin="1.5rem 0">
-          <MonthPlansSection />
-        </Box>
+        <MonthPlansSection />
         <Btn text="Get your plan" />
         <PaymentSection />
-        <Box margin="2rem 0">
-          <HeadllineH3 textBlack="What's' my program?" />
-        </Box>
-
+        <HeadllineH3 textBlack="What's' my program?" />
         <YogaProgramSection />
       </SectionWrapper>
     </div>

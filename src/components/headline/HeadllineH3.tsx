@@ -7,18 +7,15 @@ interface Props {
   textOrange?: string;
 }
 
-const HeadllineH3: React.FC<Props> = ({ textBlack, textOrange }) => {
-  return (
-    <H3 margin="1rem 0 0 0" display="flex" color="black">
-      <p>
-        {textBlack}
-        <SpanBase color="orange" fontWeight={700}>
-          {" "}
-          {textOrange}
-        </SpanBase>
-      </p>{" "}
-    </H3>
-  );
-};
+const HeadllineH3: React.FC<Props> = ({ textBlack, textOrange }) => (
+  <H3 margin="1rem 0 0 0" display="flex" color="black">
+    <p>
+      {textBlack}
+      <SpanBase margin="0 0 0 6px" color="orange" fontWeight={700}>
+        {textOrange}
+      </SpanBase>
+    </p>
+  </H3>
+);
 
 export default HeadllineH3;

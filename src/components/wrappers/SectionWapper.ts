@@ -4,9 +4,11 @@ import styled from "styled-components/macro";
 interface SectionWrapperStyles {
   margin?: string;
   width?: string;
+  padding?: string;
 }
 
 export const SectionWrapper = styled.section<SectionWrapperStyles>`
   margin: ${({ margin }) => margin || "1rem auto"};
   max-width: ${({ width }) => width || "343px"};
+  padding: ${({ padding }) => padding || ""};
 `;

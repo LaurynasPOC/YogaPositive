@@ -24,7 +24,7 @@ const MonthPlanPart: React.FC<Props> = ({
   const [selected, setSelected] = useState(false);
   return (
     <Box
-      margin="0 0 1rem 0"
+      margin="1rem 0 1rem 0"
       borderRadius="1rem"
       style={
         selected
