@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Colors, theme } from "../../styles/theme";
+import { Colors, theme } from "styles/theme";
 
 interface H1Styles {
   margin?: string | number;

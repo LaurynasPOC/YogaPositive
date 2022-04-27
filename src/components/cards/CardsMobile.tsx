@@ -1,7 +1,7 @@
 import React from "react";
 import ReactElasticCarousel from "react-elastic-carousel";
 import Card from "./Card";
-import { cardInfo } from "../../data";
+import { cardInfo } from "data";
 import { Box } from "../wrappers/Box";
 
 interface Props {

@@ -1,9 +1,9 @@
 import React from "react";
 import Countdown from "react-countdown";
-import DiscountSticker from "../../assets/images/DiscountSticker.svg";
-import PositiveYogaLogo from "../../assets/images/PositiveYogaLogo.svg";
+import DiscountSticker from "assets/images/DiscountSticker.svg";
+import PositiveYogaLogo from "assets/images/PositiveYogaLogo.svg";
 import { Box } from "../wrappers/Box";
-import { TextBase } from "../../components/texts/TextBase";
+import { TextBase } from "components/texts/TextBase";
 
 interface Props {
   discount?: number;

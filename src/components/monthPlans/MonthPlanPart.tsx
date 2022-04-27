@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import EmptyTickBox from "../../assets/images/EmptyTickBox.svg";
-import TickBox from "../../assets/images/TickBox.svg";
+import EmptyTickBox from "assets/images/EmptyTickBox.svg";
+import TickBox from "assets/images/TickBox.svg";
 import { Box } from "../wrappers/Box";
 import { TextBase } from "../texts/TextBase";
 import { SpanBase } from "../texts/SpanBase";

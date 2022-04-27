@@ -1,7 +1,7 @@
 import React from "react";
-import Phone1 from "../../assets/images/Phone1.jpg";
-import Phone2 from "../../assets/images/Phone2.jpg";
-import { TextBase } from "../../components/texts/TextBase";
+import Phone1 from "assets/images/Phone1.jpg";
+import Phone2 from "assets/images/Phone2.jpg";
+import { TextBase } from "components/texts/TextBase";
 import { Box } from "../wrappers/Box";
 
 const PhoneSection = () => (

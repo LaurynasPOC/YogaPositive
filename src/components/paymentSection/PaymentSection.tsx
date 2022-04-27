@@ -1,8 +1,8 @@
 import React from "react";
-import PaymentStaff from "../../assets/images/Payment.svg";
-import { TextBase } from "../../components/texts/TextBase";
-import { Box } from "../../components/wrappers/Box";
-import { SpanBase } from "../../components/texts/SpanBase";
+import PaymentStaff from "assets/images/Payment.svg";
+import { TextBase } from "components/texts/TextBase";
+import { Box } from "components/wrappers/Box";
+import { SpanBase } from "components/texts/SpanBase";
 
 const PaymentSection: React.FC = () => (
   <Box margin="0 0 2rem 0">

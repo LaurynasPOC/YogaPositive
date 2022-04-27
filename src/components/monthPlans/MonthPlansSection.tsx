@@ -1,9 +1,9 @@
 import React from "react";
 import MonthPlanPart from "./MonthPlanPart";
-import { yogaPlansData } from "../../data";
+import { yogaPlansData } from "data";
 
 const MonthPlansSection: React.FC = () => (
-  <div>
+  <>
     {yogaPlansData.map(
       ({ month, price, preDiscount, afterDiscount, discount }, i) => (
         <MonthPlanPart
@@ -16,7 +16,7 @@ const MonthPlansSection: React.FC = () => (
         />
       )
     )}
-  </div>
+  </>
 );
 
 export default MonthPlansSection;

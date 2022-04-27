@@ -1,5 +1,5 @@
 import React from "react";
-import { yogaProgramData } from "../../data";
+import { yogaProgramData } from "data";
 import YogaProgramPart from "./YogaProgramPart";
 import { Box } from "../wrappers/Box";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import CheckCircle from "../../assets/images/CheckCirckle.svg";
+import CheckCircle from "assets/images/CheckCirckle.svg";
 import { TextBase } from "../texts/TextBase";
 import { Box } from "../wrappers/Box";
 

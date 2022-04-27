@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Up from "../../assets/images/ExpandLess.svg";
-import Down from "../../assets/images/ExpandMore.svg";
+import Up from "assets/images/ExpandLess.svg";
+import Down from "assets/images/ExpandMore.svg";
 import { TextBase } from "../texts/TextBase";
 import { H5 } from "../texts/H5";
 import { Box } from "../wrappers/Box";

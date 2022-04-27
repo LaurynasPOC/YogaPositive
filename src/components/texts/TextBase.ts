@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
-import { theme } from "../../styles/theme";
-import { Colors } from "../../styles/theme";
+import { theme } from "styles/theme";
+import { Colors } from "styles/theme";
 
 interface TextBaseStyles {
   margin?: string | number;
