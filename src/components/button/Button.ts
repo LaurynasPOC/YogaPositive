@@ -1,12 +1,13 @@
 import styled from "styled-components/macro";
-import { Colors } from "styles/theme";
+import { color, colorStyle } from "styled-system";
+import { Colors, theme } from "styles/theme";
 
 interface ButtonStyles {
   display?: string;
   justifyContent?: string;
   alignItems?: string;
-  color?: Colors;
-  backgroundColor?: string;
+  color?: Colors | string;
+  backgroundColor?: Colors;
   boxShadow?: string | number;
   borderRadius?: string;
   margin?: string | number;
@@ -25,8 +26,9 @@ export const Button = styled.button<ButtonStyles>`
   justify-content: ${({ justifyContent }) => justifyContent || "center"};
   align-items: ${({ alignItems }) => alignItems || "center"};
   margin: ${({ margin }) => margin || "auto 0"};
-  color: ${({ color }) => color || "#FFFFFF"};
-  background-color: ${({ backgroundColor }) => backgroundColor || "#FF9B4E"};
+  color: ${({ color }) => color || theme.colors.white};
+  background-color: ${({ backgroundColor }) =>
+    backgroundColor || theme.colors.primary};
   box-shadow: ${({ boxShadow }) =>
     boxShadow || "0px 16px 32px rgba(255, 155, 78, 0.24)"};
   border-radius: ${({ borderRadius }) => borderRadius || "0.5rem"};

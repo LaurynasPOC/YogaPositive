@@ -30,7 +30,7 @@ interface BoxStyles {
   textAlign?: string;
   border?: string;
   display?: string;
-  backgroundColor?: string;
+  backgroundColor?: Colors | string;
   color?: Colors;
   borderRadius?: string;
   height?: string;

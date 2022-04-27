@@ -6,7 +6,7 @@ interface TextBaseStyles {
   margin?: string | number;
   fontSize?: string;
   fontWeight?: number;
-  color?: Colors;
+  color?: Colors | string;
   textAlign?: string;
   textDecoration?: string;
   textTransform?: string;

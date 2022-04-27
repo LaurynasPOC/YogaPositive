@@ -13,8 +13,8 @@ const PaymentSection: React.FC = () => (
     </TextBase>
     <TextBase margin="0 0 1rem 0" fontSize="0.85rem" textAlign="center">
       By choosing a payment method you agree to the
-      <SpanBase color="lightblue">T&Cs</SpanBase> and
-      <SpanBase color="lightblue">Privacy Policy</SpanBase>
+      <SpanBase color="secondary">T&Cs</SpanBase> and
+      <SpanBase color="secondary">Privacy Policy</SpanBase>
     </TextBase>
     <TextBase margin="0">
       <img src={PaymentStaff} alt="Payment" />

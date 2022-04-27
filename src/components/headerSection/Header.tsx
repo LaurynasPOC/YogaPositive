@@ -4,6 +4,7 @@ import DiscountSticker from "assets/images/DiscountSticker.svg";
 import PositiveYogaLogo from "assets/images/PositiveYogaLogo.svg";
 import { Box } from "../wrappers/Box";
 import { TextBase } from "components/texts/TextBase";
+import { theme } from "styles/theme";
 
 interface Props {
   discount?: number;
@@ -13,7 +14,7 @@ const Header: React.FC<Props> = ({ discount }) => (
   <Box>
     <Box
       display="flex"
-      backgroundColor="#90CAF9"
+      backgroundColor={theme.colors.secondary}
       height="56px"
       justifyContent="center"
       alignItems="center"
@@ -25,7 +26,7 @@ const Header: React.FC<Props> = ({ discount }) => (
         margin="0 0 0 15px"
         color="white"
       >
-        {discount}% discount only valid for{" "}
+        {discount}% discount only valid for
         <Countdown daysInHours={true} date={Date.now() + 1051000} />
       </TextBase>
     </Box>

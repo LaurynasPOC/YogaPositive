@@ -5,7 +5,7 @@ interface H3Styles {
   margin?: string | number;
   fontSize?: string;
   fontWeight?: number;
-  color?: Colors;
+  color?: Colors | string;
   lineHeight?: string;
   display?: string;
 }

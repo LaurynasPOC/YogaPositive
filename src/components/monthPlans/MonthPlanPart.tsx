@@ -5,6 +5,7 @@ import { Box } from "../wrappers/Box";
 import { TextBase } from "../texts/TextBase";
 import { SpanBase } from "../texts/SpanBase";
 import { Button } from "../button/Button";
+import { theme } from "styles/theme";
 
 interface Props {
   month?: number;
@@ -28,8 +29,8 @@ const MonthPlanPart: React.FC<Props> = ({
       borderRadius="1rem"
       style={
         selected
-          ? { border: "2px solid #ff9b4e" }
-          : { border: "2px solid rgba(0, 0, 0, 0.08)" }
+          ? { border: `2px solid ${theme.colors.primary}` }
+          : { border: `2px solid ${theme.colors.borderColor}` }
       }
       onClick={() => setSelected(!selected)}
     >
@@ -40,10 +41,9 @@ const MonthPlanPart: React.FC<Props> = ({
             <SpanBase>
               {selected ? (
                 <Button
-                  height="18px"
-                  width="81px"
-                  color="black"
-                  backgroundColor="#FFE082"
+                  height="1.2rem"
+                  width="5rem"
+                  color={theme.colors.grey}
                   margin="0 0 0 5px"
                   fontWeight={600}
                 >
@@ -61,7 +61,7 @@ const MonthPlanPart: React.FC<Props> = ({
           <SpanBase fontSize="1.5rem" fontWeight={700}>
             ${price}
           </SpanBase>
-          /month{" "}
+          /month
         </TextBase>
         {!selected ? (
           <img src={EmptyTickBox} alt="check this price" />
@@ -82,7 +82,7 @@ const MonthPlanPart: React.FC<Props> = ({
             <TextBase
               margin="1rem 0.5rem 1rem 0"
               fontWeight={700}
-              color="orange"
+              color={theme.colors.primary}
             >
               ${afterDiscount}
             </TextBase>
