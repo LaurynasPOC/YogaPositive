@@ -8,3 +8,4 @@ interface Props {
 
 const HeadlineH2: React.FC<Props> = ({ text }) => <H2>{text}</H2>;
 export default HeadlineH2;
+//jkjkx
