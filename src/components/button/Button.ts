@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { color, colorStyle } from "styled-system";
+
 import { Colors, theme } from "styles/theme";
 
 interface ButtonStyles {

@@ -16,7 +16,7 @@ import QuestionsSection from "components/questionsSection/QuestionsSection";
 import HeadlineH2 from "components/headline/HeadlineH2";
 
 const IndexPage: React.FC = () => (
-  <div>
+  <>
     <Header discount={50} />
     <SectionWrapper>
       <TextBase margin="0" color="grey" display="flex">
@@ -57,7 +57,7 @@ const IndexPage: React.FC = () => (
       <HeadllineH3 textBlack="What's' my program?" />
       <YogaProgramSection />
     </SectionWrapper>
-  </div>
+  </>
 );
 
 export default IndexPage;

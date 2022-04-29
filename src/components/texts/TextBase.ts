@@ -20,7 +20,7 @@ interface TextBaseStyles {
   backgroundColor?: string;
   height?: string;
   border?: string;
-  letterSpacing?: string;
+  letterSpacing?: string | number;
 }
 
 export const TextBase = styled.p<TextBaseStyles>`
@@ -44,4 +44,5 @@ export const TextBase = styled.p<TextBaseStyles>`
   background-color: ${({ backgroundColor }) => backgroundColor};
   height: ${({ height }) => height};
   border: ${({ border }) => border};
+  letter-spacing: ${({ letterSpacing }) => letterSpacing || ""};
 `;

@@ -1,6 +1,8 @@
 import styled from "styled-components/macro";
 import { Colors, theme } from "styles/theme";
 
+import { space, SpaceProps } from "styled-system";
+
 interface H1Styles {
   margin?: string | number;
   fontSize?: string;

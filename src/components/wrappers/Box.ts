@@ -31,7 +31,7 @@ interface BoxStyles {
   border?: string;
   display?: string;
   backgroundColor?: Colors | string;
-  color?: Colors;
+  color?: Colors | string;
   borderRadius?: string;
   height?: string;
   justifyContent?: string;

@@ -21,17 +21,17 @@ const Header: React.FC<Props> = ({ discount }) => (
     >
       <img src={DiscountSticker} alt="Discount" />
       <TextBase
-        fontWeight={400}
-        fontSize="15px"
-        margin="0 0 0 15px"
+        fontWeight={700}
+        fontSize="1rem"
+        margin="0 0 0 1rem"
         color="white"
       >
-        {discount}% discount only valid for
+        {discount}% discount only valid for{" "}
         <Countdown daysInHours={true} date={Date.now() + 1051000} />
       </TextBase>
     </Box>
     <Box
-      height="56px"
+      height="3.5rem"
       display="flex"
       justifyContent="center"
       alignItems="center"
